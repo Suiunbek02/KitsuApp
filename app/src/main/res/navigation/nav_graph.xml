@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/kitsuFragment">
+
+    <fragment
+        android:id="@+id/kitsuFragment"
+        android:name="com.example.kitsuapp.ui.fragment.manga.MangaFragment"
+        android:label="fragment_kitsu"
+        tools:layout="@layout/fragment_kitsu" >
+        <action
+            android:id="@+id/action_kitsuFragment_to_animeFragment"
+            app:destination="@id/animeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeFragment"
+        android:name="com.example.kitsuapp.ui.fragment.anime.AnimeFragment"
+        android:label="fragment_anime"
+        tools:layout="@layout/fragment_anime" />
+</navigation>
